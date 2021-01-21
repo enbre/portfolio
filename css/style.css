@@ -1,0 +1,35 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+.navbar{
+   display: flex;
+}
+ul{
+   list-style: none;
+   position: fixed;
+   
+}
+.container{
+   margin: 10px auto;
+   height: 400px;
+
+}
+li{
+   text-decoration: none;
+}
+#home{
+   background-color: aqua;
+}
+#about{
+   background-color:blueviolet;
+}
+#skills{
+   background-color: greenyellow;
+}
+#projects{
+   background-color: orangered;
+}
+#contact{
+   background-color: blue;
+}
