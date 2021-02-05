@@ -2,6 +2,12 @@
    box-sizing: border-box;
    margin: 0;
 }
+html{
+   font-size:62.5%;
+}
+body{
+   font-size:1.6rem;
+}
 .navbar{
    display: flex;
    flex-direction: column;
@@ -34,8 +40,11 @@ li a{
 li a:hover{
    background-color: rgba(255,255,255,.5);
 }
-
 .container{
+   border: 2px solid green;
+}
+
+.content{
    height: 800px;
    display: flex;
    flex-direction: column;
@@ -43,14 +52,64 @@ li a:hover{
    justify-content: center;
    /* padding-top: 60px; */
    font-weight: bold;
-   font-size:large;
+   /* font-size:large; */
    
 }
 .text-body{
    width: 60%;
+
    
 }
+.about-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#profile-pic{
+   border: 4px solid darkgrey;
+   border-radius: 20px;
+   width: 20%;
+}
+.contact-icon{
+   background-color:darkslategrey;
+   display: flex;
 
+}
+/* i{
+   color: purple;
+
+} */
+.card{
+   width: 300px;
+}
+.icon{
+   display: block;
+   padding: 20px;
+   text-align: center;
+}
+.icon:hover{
+   transition: all .2s ease-in-out;
+   transform: scale(1.15);
+   filter: brightness(130%);
+}
+.skills-content{
+   display: flex;
+
+
+   border: 2px solid purple;
+}
+.skill-logo{
+   border: 2px solid red;
+   display: flex;
+   /* text-align: center; */
+   flex-direction: column;
+   padding: 15px 15px 0 15px;
+   justify-content: bottom;
+   align-items: center;
+}
+.logo-img{
+   width: 65px;
+}
 #home{
    background-color: aqua;
 }
@@ -69,4 +128,9 @@ li a:hover{
 #footer{
    background-color:gray;
    height: 100px;
+}
+#title{
+   size: 2rem;
+   font-weight: bold;
+   color: hotpink;
 }

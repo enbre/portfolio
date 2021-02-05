@@ -1,80 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Noah Brezel</title>
+   <link rel="icon" href="./assets/images/nb_favicon2.png" type="image/icon" sizes="30x30">
    <script src="https://kit.fontawesome.com/0413098bdc.js" crossorigin="anonymous"></script>
    <script src="js/main.js" defer></script>
-   <link rel="stylesheet" href="css/style.css"
-</head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/style.css" </head>
+
 <body>
    <div class="navbar">
       <ul>
          <li><a href="#home">Home</a></li>
          <li><a href="#about">About</a></li>
-         <li><a href="#skills">Skills</a></li>
          <li><a href="#projects">Projects</a></li>
+         <li><a href="#skills">Skills</a></li>
          <li><a href="#contact">Contact</a></li>
       </ul>
    </div>
-   <div id="home" class="container">
-      <p class="text-body" id="title">Noah Brezel</p>
-      <p class="text-body" id="subtitle">Frontend Developer</p>
-   
+   <div id="home" class="content">
+      <h1 class="text-body">Noah Brezel</h1>
+      <!-- <p class="text-body" id="title">Noah Brezel</p> -->
+      <h3 class="text-body">Frontend Developer</h3>
+      <!-- <p class="text-body" id="subtitle">Frontend Developer</p> -->
+
 
    </div>
-   <div id="about" class="container">
-      <p class="text-body">As a mechanical designer turned full-stack developer, I bring a meticulous approach to every project I work on. My previous experience has given me insight into how things work and look, and I combine this understanding with technical skills to achieve efficient code solutions. I’m looking for opportunities to collaborate on the creation of digital tools that can improve people’s lives.
+   <div id="about" class="content">
+      <div class="about-content">
+         <img id="profile-pic" src="./assets/images/profile_pic.jpg" alt="Profile picture">
 
-      </p>
-   </div>
-   <div id="skills" class="container">
-      <i class="fab fa-css3-alt fa-3x"></i>
-      <span>CSS</span>
-      <i class="fab fa-html5 fa-3x"></i>
-      <span>HTML</span>
-      
-      <i class="fab fa-js fa-3x"></i>
-      <span>JavaScript</span>
-      <i class="fab fa-node-js fa-3x"></i>
-      <span>NodeJS</span>
-      <i class="fab fa-react fa-3x"></i>
-      <span>React/React Native</span>
-      <i class="fab fa-python fa-3x"></i>
-      <span>Python</span>
-   </div>
-   <div id="projects" class="container">Projects</div>
-   <div id="contact" class="container">Contact
+         <p class="text-body">As a mechanical designer turned full-stack developer, I bring a meticulous approach to
+            every
+            project I work on. My previous experience has given me insight into how things work and look, and I combine
+            this understanding with technical skills to achieve efficient code solutions. I’m looking for opportunities
+            to
+            collaborate on the creation of digital tools that can improve people’s lives.
 
-      <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
-         <div>
-            <i class="fab fa-github-square fa-2x"></i>
+         </p>
+      </div>
+   </div>
+   <div id="projects" class="content">
+      <div class="container">
+
+
+         <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+               <img class="activator" src="./assets/images/office.jpg">
+            </div>
+            <div class="card-content">
+               <span class="card-title activator grey-text text-darken-4">Unicorn Detector<i
+                     class="material-icons right">more_vert</i></span>
+               <p><a href="https://github.com/enbre/unicorn-detector-frontend" target="_blank">
+                  <i class="material-icons left">code</i> Frontend</a></p>
+               <p><a href="https://github.com/enbre/unicorn-detector-backend" target="blank">
+                  <i class="material-icons left">code</i>Backend</a></p>
+            </div>
+            <div class="card-reveal">
+               <span class="card-title grey-text text-darken-4">Unicorn Detector<i
+                     class="material-icons right">close</i></span>
+               <br>
+               <hr>
+               <br>
+               <p>Basic description of project</p>
+               <br>
+               <p>Technology used:</p>
+               <p>Blah</p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div id="skills" class="content">
+      <div class="container skills-content">
+         <div class="skill-logo">
+            <!-- <i class="fab fa-html5 fa-3x"></i> -->
+            <img class="logo-img" src="./assets/images/html_logo.png" />
+            <span>HTML</span>
+         </div>
+         <div class="skill-logo">
+            <!-- <i class="fab fa-css3-alt fa-3x"></i> -->
+            <img class="logo-img" src="./assets/images/css_logo.png" />
+            <span>CSS</span>
+         </div>
+         <div class="skill-logo">
+            <!-- <i class="fab fa-js fa-3x"></i> -->
+            <img class="logo-img" src="./assets/images/javascript_logo.png" />
+            <span>JavaScript</span>
+         </div>
+         <div class="skill-logo">
+            <!-- <i class="fab fa-node-js fa-3x"></i> -->
+            <img class="logo-img" src="./assets/images/node_js_logo.png" />
+            <span>NodeJS</span>
+         </div>
+         <div class="skill-logo">
+            <!-- <i class="fab fa-react fa-3x" aria-hidden="true"></i> -->
+            <img class="logo-img" src="./assets/images/react_logo.png" width="100px" />
+            <span>React</span>
+         </div>
+         <div class="skill-logo">
+            <!-- <i class="fab fa-python fa-3x"></i> -->
+            <img class="logo-img" src="./assets/images/python_logo.png" />
+            <span>Python</span>
+         </div>
+         <div class="skill-logo">
+            <img class="logo-img" src="./assets/images/solidworks_logo.png" aria-hidden="true" />
+            <span>SolidWorks</span>
+         </div>
+      </div>
+   </div>
+  
+   <div id="contact" class="content">Contact
+      <div class="contact-icon">
+         <div class="icon">
+            <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
+               <div>
+                  <i class="fab fa-github-square fa-2x"></i>
+               </div>
+            </a>
             <span>GitHub</span>
          </div>
-      </a>
-      <a href="https://www.linkedin.com/in/noahbrezel/"aria-hidden="true" target="_blank">
-         <div>
-            <i class="fab fa-linkedin fa-2x"></i>
+
+         <div class="icon">
+            <a href="https://www.linkedin.com/in/noahbrezel/" aria-hidden="true" target="_blank">
+               <div>
+                  <i class="fab fa-linkedin fa-2x"></i>
+               </div>
+            </a>
             <span>LinkedIn</span>
          </div>
-      </a>
-      <a href="mailto:noahbrezel@gmail.com"aria-hidden="true" target="_blank">
-         <div>
-            <i class="fas fa-envelope-square fa-2x"></i>
+         <div class="icon">
+            <a href="mailto:noahbrezel@gmail.com" aria-hidden="true" target="_blank">
+               <div>
+                  <i class="fas fa-envelope-square fa-2x"></i>
+               </div>
+            </a>
             <span>Email</span>
          </div>
-      </a>
-      <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
-         <div>
-            <i class="fas fa-file-alt fa-2x"></i>
+
+         <div class="icon">
+            <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
+               <div>
+                  <i class="fas fa-file-alt fa-2x"></i>
+               </div>
+            </a>
             <span>Resume</span>
          </div>
-      </a>
-   
-      
+
+
+      </div>
    </div>
 
-   <footer id="footer">Footer</footer>
+   <footer id="footer"></footer>
 </body>
+
 </html>
