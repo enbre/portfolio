@@ -13,27 +13,32 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-   <link rel="stylesheet" href="css/style.css" </head>
+   <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
+
    <div class="navbar">
       <ul>
          <li><a href="#home">Home</a></li>
          <li><a href="#about">About</a></li>
          <li><a href="#projects">Projects</a></li>
          <li><a href="#skills">Skills</a></li>
-         <li><a href="#contact">Contact</a></li>
+         <li><a href="#footer">Contact</a></li>
       </ul>
    </div>
-   <div id="home" class="content">
+
+   <section id="home">
       <h1 class="text-body">Noah Brezel</h1>
       <!-- <p class="text-body" id="title">Noah Brezel</p> -->
       <h3 class="text-body">Frontend Developer</h3>
       <!-- <p class="text-body" id="subtitle">Frontend Developer</p> -->
 
 
-   </div>
-   <div id="about" class="content">
+   </section>
+
+
+   <section id="about">
       <div class="about-content">
          <img id="profile-pic" src="./assets/images/profile_pic.jpg" alt="Profile picture">
 
@@ -46,11 +51,10 @@
 
          </p>
       </div>
-   </div>
-   <div id="projects" class="content">
+   </section>
+
+   <section id="projects">
       <div class="container">
-
-
          <div class="card medium">
             <div class="card-image waves-effect waves-block waves-light">
                <img class="activator" src="./assets/images/office.jpg">
@@ -59,9 +63,9 @@
                <span class="card-title activator grey-text text-darken-4">Unicorn Detector<i
                      class="material-icons right">more_vert</i></span>
                <p><a href="https://github.com/enbre/unicorn-detector-frontend" target="_blank">
-                  <i class="material-icons left">code</i> Frontend</a></p>
+                     <i class="material-icons left">code</i> Frontend</a></p>
                <p><a href="https://github.com/enbre/unicorn-detector-backend" target="blank">
-                  <i class="material-icons left">code</i>Backend</a></p>
+                     <i class="material-icons left">code</i>Backend</a></p>
             </div>
             <div class="card-reveal">
                <span class="card-title grey-text text-darken-4">Unicorn Detector<i
@@ -77,48 +81,72 @@
          </div>
       </div>
 
-   </div>
-   <div id="skills" class="content">
-      <div class="container skills-content">
+   </section>
+
+
+   <section id="skills">
+      <div class="container">
          <div class="skill-logo">
-            <!-- <i class="fab fa-html5 fa-3x"></i> -->
-            <img class="logo-img" src="./assets/images/html_logo.png" />
+            <img class="skill-img" src="./assets/images/html_logo.png" aria-hidden="true" />
             <span>HTML</span>
          </div>
          <div class="skill-logo">
-            <!-- <i class="fab fa-css3-alt fa-3x"></i> -->
-            <img class="logo-img" src="./assets/images/css_logo.png" />
+            <img class="skill-img" src="./assets/images/css_logo.png" aria-hidden="true" />
             <span>CSS</span>
          </div>
          <div class="skill-logo">
-            <!-- <i class="fab fa-js fa-3x"></i> -->
-            <img class="logo-img" src="./assets/images/javascript_logo.png" />
+            <img class="skill-img" src="./assets/images/javascript_logo.png" aria-hidden="true" />
             <span>JavaScript</span>
          </div>
          <div class="skill-logo">
-            <!-- <i class="fab fa-node-js fa-3x"></i> -->
-            <img class="logo-img" src="./assets/images/node_js_logo.png" />
+            <img class="skill-img" src="./assets/images/node_js_logo.png" aria-hidden="true" />
             <span>NodeJS</span>
          </div>
          <div class="skill-logo">
-            <!-- <i class="fab fa-react fa-3x" aria-hidden="true"></i> -->
-            <img class="logo-img" src="./assets/images/react_logo.png" width="100px" />
+            <img class="skill-img" src="./assets/images/react_logo.png" aria-hidden="true" />
             <span>React</span>
          </div>
          <div class="skill-logo">
-            <!-- <i class="fab fa-python fa-3x"></i> -->
-            <img class="logo-img" src="./assets/images/python_logo.png" />
+            <img class="skill-img" src="./assets/images/python_logo.png" aria-hidden="true" />
             <span>Python</span>
          </div>
          <div class="skill-logo">
-            <img class="logo-img" src="./assets/images/solidworks_logo.png" aria-hidden="true" />
+            <img class="skill-img" src="./assets/images/express_js_logo.png" aria-hidden="true" />
+            <span>ExpressJS</span>
+         </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/postgres_logo.png" aria-hidden="true" />
+            <span>PostgreSQL</span>
+         </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/materialize_logo.png" width="95" aria-hidden="true" />
+            <span>Materialize</span>
+         </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/bootstrap_logo.png" aria-hidden="true" />
+            <span>Bootstrap</span>
+         </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/solidworks_logo.png" aria-hidden="true" />
             <span>SolidWorks</span>
          </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/vectorworks_logo.png" aria-hidden="true" />
+            <span>Vectorworks</span>
+         </div>
+
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/sketchup_logo.png" aria-hidden="true" />
+            <span>Sketchup</span>
+         </div>
+         <div class="skill-logo">
+            <img class="skill-img" src="./assets/images/illustrator_logo.png" aria-hidden="true" />
+            <span>Illustrator</span>
+         </div>
+
       </div>
-   </div>
-  
-   <div id="contact" class="content">Contact
-      <div class="contact-icon">
+
+      <div class="contact-icons">
          <div class="icon">
             <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
                <div>
@@ -127,7 +155,6 @@
             </a>
             <span>GitHub</span>
          </div>
-
          <div class="icon">
             <a href="https://www.linkedin.com/in/noahbrezel/" aria-hidden="true" target="_blank">
                <div>
@@ -144,7 +171,6 @@
             </a>
             <span>Email</span>
          </div>
-
          <div class="icon">
             <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
                <div>
@@ -153,12 +179,51 @@
             </a>
             <span>Resume</span>
          </div>
+      </div>
 
+
+   </section>
+
+   <!-- <footer id="footer">
+      <div class="contact-icon"></div>
+      <div class="icon">
+         <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
+            <div>
+               <i class="fab fa-github-square fa-2x"></i>
+            </div>
+         </a>
+         <span>GitHub</span>
+      </div>
+
+      <div class="icon">
+         <a href="https://www.linkedin.com/in/noahbrezel/" aria-hidden="true" target="_blank">
+            <div>
+               <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+         </a>
+         <span>LinkedIn</span>
+      </div>
+      <div class="icon">
+         <a href="mailto:noahbrezel@gmail.com" aria-hidden="true" target="_blank">
+            <div>
+               <i class="fas fa-envelope-square fa-2x"></i>
+            </div>
+         </a>
+         <span>Email</span>
+      </div>
+
+      <div class="icon">
+         <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
+            <div>
+               <i class="fas fa-file-alt fa-2x"></i>
+            </div>
+         </a>
+         <span>Resume</span>
+      </div>
 
       </div>
-   </div>
 
-   <footer id="footer"></footer>
+   </footer> -->
 </body>
 
 </html>
