@@ -1,3 +1,10 @@
+:root{
+   --color1: #A0F2F2; 
+   --color2: #04B2D9; 
+   --color3: #4E8AD9; 
+   --color4: #555BD9; 
+   --color5: #3A36BF; 
+}
 *{
    box-sizing: border-box;
    margin: 0;
@@ -9,6 +16,7 @@ html{
 body{
    height:100%;
    font-size:1.6rem;
+
 }
 ul{
    list-style: none;
@@ -37,7 +45,7 @@ section{
    align-items: center;
    justify-content: center;
    font-weight: bold;
-   border: 2px solid darkblue;
+   /* border: 2px solid darkblue; */
 }
 .navbar{
    display: flex;
@@ -50,7 +58,7 @@ section{
    background-color: rgba(255,255,255,.7);
 }
 .container{
-   border: 2px solid green;
+   /* border: 2px solid green; */
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -98,22 +106,29 @@ section{
    height: 65px;
 }
 #home{
-   background-color: aqua;
+   /* background-color: aqua; */
+   background-image: linear-gradient(var(--color1), var(--color2));
 }
 #about{
-   background-color:blueviolet;
+   /* background-color:blueviolet; */
+   background-image: linear-gradient(var(--color2), var(--color3));
+}
+
+#projects{
+   background-image: linear-gradient(var(--color3), var(--color4));
+   /* background-image: linear-gradient(rgba(31,119,171,30), rgba(31,119,171,15)); */
+   /* background-color: orangered; */
 }
 #skills{
-   background-color: darkgray;
+   background-image: linear-gradient(var(--color4), var(--color5));
+   /* background-image: linear-gradient(rgba(31,119,171,45), rgba(31,119,171,30)); */
+   /* background-color: darkgray; */
 }
-#projects{
-   background-color: orangered;
-}
-#contact{
-   background-color:azure
-}
+/* #contact{ */
+   /* background-color:azure */
+/* } */
 #footer{
-   background-color:darkkhaki;
+   /* background-color:darkkhaki; */
    height: 100px;
    /* border: 2px solid teal; */
 }
@@ -128,3 +143,4 @@ section{
    font-weight: bold;
    color: hotpink;
 }
+
