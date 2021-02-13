@@ -24,17 +24,24 @@
          <li><a href="#about">About</a></li>
          <li><a href="#projects">Projects</a></li>
          <li><a href="#skills">Skills</a></li>
-         <li><a href="#footer">Contact</a></li>
+         <!-- <li><a href="#footer">Contact</a></li> -->
+         <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact</a></li>
       </ul>
+    
+      
+      
    </div>
+   <ul id='dropdown1' class='dropdown-content'>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+   </ul>
+
 
    <section id="home">
-      <h1 class="text-body">Noah Brezel</h1>
-      <!-- <p class="text-body" id="title">Noah Brezel</p> -->
-      <h3 class="text-body">Frontend Developer</h3>
-      <!-- <p class="text-body" id="subtitle">Frontend Developer</p> -->
-
-
+         <p class="text-body" id="title">Noah Brezel</p>
+         <p class="text-body" id="subtitle">Frontend Developer</p>
    </section>
 
 
@@ -48,8 +55,9 @@
             this understanding with technical skills to achieve efficient code solutions. I’m looking for opportunities
             to
             collaborate on the creation of digital tools that can improve people’s lives.
-
+            
          </p>
+         
       </div>
    </section>
 
@@ -63,9 +71,9 @@
                <span class="card-title activator grey-text text-darken-4">Unicorn Detector<i
                      class="material-icons right">more_vert</i></span>
                <p><a href="https://github.com/enbre/unicorn-detector-frontend" target="_blank">
-                     <i class="material-icons left">code</i> Frontend</a></p>
+                     <i class="fab fa-github fa-lg"></i>&emsp;Frontend</a></p>
                <p><a href="https://github.com/enbre/unicorn-detector-backend" target="blank">
-                     <i class="material-icons left">code</i>Backend</a></p>
+                     <i class="fab fa-github fa-lg"> </i>&emsp;Backend</a></p>
             </div>
             <div class="card-reveal">
                <span class="card-title grey-text text-darken-4">Unicorn Detector<i
@@ -85,7 +93,7 @@
 
 
    <section id="skills">
-      <div class="container">
+      <div class="container skills-container">
          <div class="skill-logo">
             <img class="skill-img" src="./assets/images/html_logo.png" aria-hidden="true" />
             <span>HTML</span>
@@ -111,19 +119,20 @@
             <span>Python</span>
          </div>
          <div class="skill-logo">
-            <img class="skill-img" src="./assets/images/express_js_logo.png" aria-hidden="true" />
+            <img class="skill-img shrink-img" src="./assets/images/express_js_logo.png" aria-hidden="true" />
             <span>ExpressJS</span>
          </div>
          <div class="skill-logo">
-            <img class="skill-img" src="./assets/images/postgres_logo.png" aria-hidden="true" />
+            <img class="skill-img" src="./assets/images/postgresql_logo.png" aria-hidden="true" />
             <span>PostgreSQL</span>
          </div>
          <div class="skill-logo">
-            <img class="skill-img" src="./assets/images/materialize_logo.png" width="95" aria-hidden="true" />
+            <img class="skill-img shrink-img" src="./assets/images/materialize_logo.png" width="95"
+               aria-hidden="true" />
             <span>Materialize</span>
          </div>
          <div class="skill-logo">
-            <img class="skill-img" src="./assets/images/bootstrap_logo.png" aria-hidden="true" />
+            <img class="skill-img shrink-img" src="./assets/images/bootstrap_logo.png" aria-hidden="true" />
             <span>Bootstrap</span>
          </div>
          <div class="skill-logo">
@@ -145,8 +154,12 @@
          </div>
 
       </div>
+   </section>
 
+   <footer id="footer">
       <div class="contact-icons">
+
+
          <div class="icon">
             <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
                <div>
@@ -155,6 +168,7 @@
             </a>
             <span>GitHub</span>
          </div>
+
          <div class="icon">
             <a href="https://www.linkedin.com/in/noahbrezel/" aria-hidden="true" target="_blank">
                <div>
@@ -171,6 +185,7 @@
             </a>
             <span>Email</span>
          </div>
+
          <div class="icon">
             <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
                <div>
@@ -179,51 +194,10 @@
             </a>
             <span>Resume</span>
          </div>
-      </div>
-
-
-   </section>
-
-   <!-- <footer id="footer">
-      <div class="contact-icon"></div>
-      <div class="icon">
-         <a href="https://github.com/enbre" aria-hidden="true" target="_blank">
-            <div>
-               <i class="fab fa-github-square fa-2x"></i>
-            </div>
-         </a>
-         <span>GitHub</span>
-      </div>
-
-      <div class="icon">
-         <a href="https://www.linkedin.com/in/noahbrezel/" aria-hidden="true" target="_blank">
-            <div>
-               <i class="fab fa-linkedin fa-2x"></i>
-            </div>
-         </a>
-         <span>LinkedIn</span>
-      </div>
-      <div class="icon">
-         <a href="mailto:noahbrezel@gmail.com" aria-hidden="true" target="_blank">
-            <div>
-               <i class="fas fa-envelope-square fa-2x"></i>
-            </div>
-         </a>
-         <span>Email</span>
-      </div>
-
-      <div class="icon">
-         <a href="./assets/NoahBrezel_Resume.pdf" aria-hidden="true" target="_blank">
-            <div>
-               <i class="fas fa-file-alt fa-2x"></i>
-            </div>
-         </a>
-         <span>Resume</span>
-      </div>
 
       </div>
 
-   </footer> -->
+   </footer>
 </body>
 
 </html>
