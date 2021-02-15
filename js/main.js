@@ -1,13 +1,5 @@
 console.log("sanity check")
 
-// document.addEventListener('DOMContentLoaded', function() {
-//    const elems = document.getElementById('contacts');
-//    const instances = M.FloatingActionButton.init(elems, {
-//       direction: 'bottom',
-      
-
-//    });
-//  });
 
  document.addEventListener('DOMContentLoaded', function() {
    var elems = document.querySelectorAll('.dropdown-trigger');
@@ -17,4 +9,9 @@ console.log("sanity check")
       hover: true,
 
    });
+ });
+
+ document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.collapsible');
+   var instances = M.Collapsible.init(elems);
  });
