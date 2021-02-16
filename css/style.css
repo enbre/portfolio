@@ -16,6 +16,7 @@ html{
 body{
    height:100%;
    font-size:1.6rem;
+   color:var(--color3);
 }
 .navbar ul{
    list-style: none;
@@ -57,9 +58,10 @@ section{
    font-weight: bold;
    /* border: 2px solid darkblue; */
 }
-i{
+i, a{
    color: var(--color3);
 }
+
 .navbar{
    display: flex;
    flex-direction: column;
@@ -86,11 +88,12 @@ i{
    font-size:medium;
    
 }
-.about-content{
+.content{
    display: flex;
    justify-content: center;
    align-items: center;
    color: var(--color4);
+   flex-wrap: wrap;
 }
 .contact-icons{
    color: var(--color3);
@@ -98,7 +101,36 @@ i{
    justify-content: center;  
 }
 .card{
-   width: 300px;
+   width: 35%;
+   min-width: 300px;
+   border: 3px solid var(--color1);
+   border-radius: 20px;
+   height:75%;
+   margin: 20px;
+   
+}
+
+.card-image{
+   border-radius: 18px 18px 0 0;
+   height: 260px;
+   height: auto;
+   /* border: 3px solid red; */
+   
+}
+.card-title{
+   color: var(--color4);
+}
+.card .card-action a:not(btn){
+   color:var(--color3);
+}
+.card-content{
+   margin-top: -5px;
+} 
+.project-links{
+   display: flex;
+   flex-direction: column;
+   background-color:violet;
+   color:var(--color3);
 
 }
 .skills-container{
@@ -129,21 +161,30 @@ i{
 .shrink-img{
    padding-top: 15px;
 }
-/* #projects-content{
+#projects-content{
    border: 2px solid var(--color1);
-   border: 2px solid red;
+   /* border: 2px solid red;
    border-radius: 20px;
-   background-color:white;
+   background-color:white; */
+   color: var(--color4);
    
-} */ 
+} 
 .collapsible{
    width: 100%;
-   border: 2px solid purple;
-   border-radius: 20px;
-   /* height: 100%; */
+   border: 2px solid var(--color1);
+   /* border-radius: 20px; */
 
 }
 
+.collapsible-body{
+   background-color: white;
+}
+/* #collapsible-first{
+   border-radius: 20px 20px 0 0;
+}
+#collapsible-last{
+   border-radius: 0 0 20px 20px;
+} */
 
 
 #home{
@@ -154,6 +195,7 @@ i{
 }
 
 #projects{
+   height: 120%;
    background-image: linear-gradient(var(--color3), var(--color4));
 }
 #skills{
@@ -166,9 +208,11 @@ i{
    font-size: 12px;
 }
 #profile-pic{
-   border: 2px solid var(--color1);
+   border: 3px solid var(--color1);
    border-radius: 20px;
-   width: 20%;
+   width: 25%;
+   min-width: 200px;
+
 
 }
 #title{
@@ -179,4 +223,10 @@ i{
 #subtitle{
    font-size: 40px;
    color: var(--color4);
+}
+
+@media only screen and (max-width:768px){
+   #projects{
+      height: auto;
+   }
 }
