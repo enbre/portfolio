@@ -1,35 +1,232 @@
+:root{
+   --color1: #ADD9C9; 
+   --color2: #37A69B; 
+   --color3: #2B7B8C; 
+   --color4: #023373; 
+   --color5: #020659; 
+}
 *{
    box-sizing: border-box;
    margin: 0;
 }
-.navbar{
-   display: flex;
+html{
+   height: 100%;
+   font-size:62.5%;
 }
-ul{
+body{
+   height:100%;
+   font-size:1.6rem;
+   color:var(--color3);
+}
+.navbar ul{
    list-style: none;
    position: fixed;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+.navbar li {
+   float: left;
+}
+.navbar li a{
+   text-decoration: none;
+   display: block;
+   color: var(--color3);
+   padding: 8px;
+   text-align: center;
+}
+.navbar li a:hover{
+   background-color: rgba(255,255,255,.5);
+}
+.dropdown-content li{
+   background:none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
 }
-.container{
-   margin: 10px auto;
-   height: 400px;
+#dropdown1{
+   background-color: rgba(255,255,255,.7);
 
 }
-li{
-   text-decoration: none;
+section{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   /* border: 2px solid darkblue; */
 }
+i, a{
+   color: var(--color3);
+}
+
+.navbar{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-end;
+   position: fixed;
+   width: 100%;
+   height:40px;
+   background-color: rgba(255,255,255,.7);
+   z-index: 2;
+}
+.container{
+   /* border: 2px solid green; */
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.text-body{
+   width: 60%;
+   padding: 30px;
+   font-size:medium;
+   
+}
+.content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--color4);
+   flex-wrap: wrap;
+}
+.contact-icons{
+   color: var(--color3);
+   display: flex;
+   justify-content: center;  
+}
+.card{
+   width: 35%;
+   min-width: 300px;
+   border: 3px solid var(--color1);
+   border-radius: 20px;
+   height:75%;
+   margin: 20px;
+   
+}
+
+.card-image{
+   border-radius: 18px 18px 0 0;
+   height: 260px;
+   height: auto;
+   /* border: 3px solid red; */
+   
+}
+.card-title{
+   color: var(--color4);
+}
+.card .card-action a:not(btn){
+   color:var(--color3);
+}
+.card-content{
+   margin-top: -5px;
+} 
+.project-links{
+   display: flex;
+   flex-direction: column;
+   background-color:violet;
+   color:var(--color3);
+
+}
+.skills-container{
+   color: var(--color1)
+}
+.icon{
+   display: block;
+   padding: 10px 0;
+   text-align: center;
+   color: var(--color3);
+}
+.icon:hover{
+   transition: all .2s ease-in-out;
+   transform: scale(1.05);
+   filter: brightness(130%);
+}
+
+.skill-logo{
+   display: flex;
+   flex-direction: column;
+   padding: 15px 15px 0 15px;
+   align-items: center;
+}
+.skill-img{
+   height: 75px;
+   padding-bottom: 8px;
+}
+.shrink-img{
+   padding-top: 15px;
+}
+#projects-content{
+   border: 2px solid var(--color1);
+   /* border: 2px solid red;
+   border-radius: 20px;
+   background-color:white; */
+   color: var(--color4);
+   
+} 
+.collapsible{
+   width: 100%;
+   border: 2px solid var(--color1);
+   /* border-radius: 20px; */
+
+}
+
+.collapsible-body{
+   background-color: white;
+}
+/* #collapsible-first{
+   border-radius: 20px 20px 0 0;
+}
+#collapsible-last{
+   border-radius: 0 0 20px 20px;
+} */
+
+
 #home{
-   background-color: aqua;
+   background-image: linear-gradient(var(--color1), var(--color2));
 }
 #about{
-   background-color:blueviolet;
+   background-image: linear-gradient(var(--color2), var(--color3));
+}
+
+#projects{
+   height: 120%;
+   background-image: linear-gradient(var(--color3), var(--color4));
 }
 #skills{
-   background-color: greenyellow;
+   background-image: linear-gradient(var(--color4), var(--color5));
 }
-#projects{
-   background-color: orangered;
+#footer{
+   height: 100px;
+   background-color: var(--color5);
+   color: var(--color3);
+   font-size: 12px;
 }
-#contact{
-   background-color: blue;
+#profile-pic{
+   border: 3px solid var(--color1);
+   border-radius: 20px;
+   width: 25%;
+   min-width: 200px;
+
+
+}
+#title{
+   font-size: 60px;
+   font-weight: bold;
+   color: var(--color5);
+}
+#subtitle{
+   font-size: 40px;
+   color: var(--color4);
+}
+
+@media only screen and (max-width:768px){
+   #projects{
+      height: auto;
+   }
 }
