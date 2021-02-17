@@ -123,6 +123,17 @@ i, a{
    color:var(--color3);
 
 }
+
+.card-reveal ul{
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+}
+
+.card-reveal li{
+   text-decoration: none;
+}
+
 .skills-container{
    color: var(--color1)
 }
