@@ -43,11 +43,9 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   
 }
 #dropdown1{
    background-color: rgba(255,255,255,.7);
-
 }
 section{
    height: 100%;
@@ -56,12 +54,10 @@ section{
    align-items: center;
    justify-content: center;
    font-weight: bold;
-   /* border: 2px solid darkblue; */
 }
 i, a{
    color: var(--color3);
 }
-
 .navbar{
    display: flex;
    flex-direction: column;
@@ -76,7 +72,6 @@ i, a{
 .container{
    /* border: 2px solid green; */
    display: flex;
-   /* flex-direction: column; */
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
@@ -84,15 +79,14 @@ i, a{
 
 .text-body{
    width: 60%;
-   padding: 30px;
    font-size:medium;
-   
 }
 .content{
    display: flex;
    justify-content: center;
+   justify-content: space-around;
    align-items: center;
-   color: var(--color4);
+   color: var(--color5);
    flex-wrap: wrap;
 }
 .contact-icons{
@@ -107,15 +101,11 @@ i, a{
    border-radius: 20px;
    height:75%;
    margin: 20px;
-   
 }
-
 .card-image{
    border-radius: 18px 18px 0 0;
    height: 260px;
    height: auto;
-   /* border: 3px solid red; */
-   
 }
 .card-title{
    color: var(--color4);
@@ -147,7 +137,6 @@ i, a{
    transform: scale(1.05);
    filter: brightness(130%);
 }
-
 .skill-logo{
    display: flex;
    flex-direction: column;
@@ -163,39 +152,16 @@ i, a{
 }
 #projects-content{
    border: 2px solid var(--color1);
-   /* border: 2px solid red;
-   border-radius: 20px;
-   background-color:white; */
    color: var(--color4);
-   
 } 
-.collapsible{
-   width: 100%;
-   border: 2px solid var(--color1);
-   /* border-radius: 20px; */
-
-}
-
-.collapsible-body{
-   background-color: white;
-}
-/* #collapsible-first{
-   border-radius: 20px 20px 0 0;
-}
-#collapsible-last{
-   border-radius: 0 0 20px 20px;
-} */
-
-
 #home{
    background-image: linear-gradient(var(--color1), var(--color2));
 }
 #about{
    background-image: linear-gradient(var(--color2), var(--color3));
 }
-
 #projects{
-   height: 120%;
+   height: auto;
    background-image: linear-gradient(var(--color3), var(--color4));
 }
 #skills{
@@ -208,12 +174,12 @@ i, a{
    font-size: 12px;
 }
 #profile-pic{
-   border: 3px solid var(--color1);
+   border: 2.5px solid var(--color1);
    border-radius: 20px;
    width: 25%;
    min-width: 200px;
-
-
+   max-width: 450px;
+   margin: 20px;
 }
 #title{
    font-size: 60px;
@@ -223,10 +189,4 @@ i, a{
 #subtitle{
    font-size: 40px;
    color: var(--color4);
-}
-
-@media only screen and (max-width:768px){
-   #projects{
-      height: auto;
-   }
 }

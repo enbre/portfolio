@@ -1,0 +1,24 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with UXWing SVG Editor - https://uxwing.com/svg-icon-editor/ -->
+ <defs>
+  <linearGradient y2="1" x2="1" y1="0" x1="1" id="svg_9">
+   <stop offset="0" stop-color="#add9c9"/>
+   <stop offset="1" stop-color="#522636"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="34" height="34" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="url(#svg_9)" stroke-width="1.5" x="67.631342" y="0.466714" width="31.495496" height="30.315315" id="svg_4"/>
+  <path stroke="#000" id="svg_5" d="m-0.22473,32.175069l0,-32.5778l33.286012,32.5778l-33.286012,0z" stroke-width="0" fill="#2b7b8c"/>
+  <path stroke="#000" id="svg_6" d="m53.457814,21.551876l0,-27.9036l23.51267,27.9036l-23.51267,0z" stroke-width="0" fill="#add9c9"/>
+  <path stroke="#000" transform="rotate(-180 16.064167022705078,15.815344810485838) " id="svg_7" d="m-0.508016,32.175068l0,-32.719447l33.144367,32.719447l-33.144367,0z" stroke-width="0" fill="#023373"/>
+  <path stroke="#000" id="svg_3" d="m42.126406,29.200573l0,-27.90359l23.51267,27.90359l-23.51267,0z" stroke-width="0" fill="#2b7b8c"/>
+ </g>
+</svg>
