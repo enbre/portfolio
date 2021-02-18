@@ -19,7 +19,6 @@ body{
    color:var(--color3);
 }
 .navbar ul{
-   list-style: none;
    position: fixed;
    margin: 0;
    padding: 0;
@@ -100,7 +99,7 @@ i, a{
    border: 3px solid var(--color1);
    border-radius: 20px;
    height:75%;
-   margin: 20px;
+   margin: 50px 20px;
 }
 .card-image{
    border-radius: 18px 18px 0 0;
@@ -109,29 +108,26 @@ i, a{
 }
 .card-title{
    color: var(--color4);
+
 }
-.card .card-action a:not(btn){
-   color:var(--color3);
-}
-.card-content{
-   margin-top: -5px;
-} 
 .project-links{
    display: flex;
    flex-direction: column;
-   background-color:violet;
    color:var(--color3);
-
 }
 
-.card-reveal ul{
+.project-tech ul{
    display: flex;
-   /* flex-direction: column; */
+   flex-direction: column;
    flex-wrap: wrap;
+   height:110px;
+   margin-left: 20px;
 }
 
-.card-reveal li{
-   text-decoration: none;
+.project-tech li{
+   font-size: 1.4rem;
+   color:var(--color3)
+   
 }
 
 .skills-container{
