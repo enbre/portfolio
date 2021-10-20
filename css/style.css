@@ -12,12 +12,14 @@
 html{
    height: 100%;
    font-size:62.5%;
+   scroll-behavior: smooth;
 }
 body{
    height:100%;
    font-size:1.6rem;
    color:var(--color3);
 }
+
 .navbar ul{
    position: fixed;
    margin: 0;
@@ -48,6 +50,9 @@ body{
 }
 section{
    height: 100%;
+   /* margin: 50% 0px; */
+   /* height: auto; */
+   /* border: solid 2px red; */
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -81,12 +86,14 @@ i, a{
    font-size:medium;
 }
 .content{
+   /* border: solid 1px gold; */
    display: flex;
-   justify-content: center;
    justify-content: space-around;
+   justify-content: center;
    align-items: center;
    color: var(--color5);
    flex-wrap: wrap;
+   margin: 100px 0px 200px 0px;
 }
 .contact-icons{
    color: var(--color3);
@@ -94,17 +101,19 @@ i, a{
    justify-content: center;  
 }
 .card{
-   width: 35%;
-   min-width: 300px;
+   width: 20%;
+   min-width: 250px;
+   max-height: 30%;
+   max-height: 350px;
    border: 3px solid var(--color1);
    border-radius: 20px;
-   height:75%;
-   margin: 50px 20px;
+   /* height:75%; */
+   margin: 30px 30px;
 }
 .card-image{
    border-radius: 18px 18px 0 0;
    height: 260px;
-   height: auto;
+   /* height: auto; */
 }
 .card-title{
    color: var(--color4);
@@ -166,6 +175,7 @@ i, a{
 }
 #about{
    background-image: linear-gradient(var(--color2), var(--color3));
+   height: auto;
 }
 #projects{
    height: auto;
@@ -176,9 +186,10 @@ i, a{
 }
 #footer{
    height: 100px;
-   background-color: var(--color5);
    color: var(--color3);
    font-size: 12px;
+   margin-bottom:350px;
+   border: 2.5px solid var(--color1);
 }
 #profile-pic{
    border: 2.5px solid var(--color1);
@@ -197,3 +208,10 @@ i, a{
    font-size: 40px;
    color: var(--color4);
 }
+
+/* @media screen and  (max-width: 600px){
+   section{
+      height:120%;
+      
+   }
+} */
