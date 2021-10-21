@@ -19,7 +19,6 @@ body{
    font-size:1.6rem;
    color:var(--color3);
 }
-
 .navbar ul{
    position: fixed;
    margin: 0;
@@ -50,8 +49,6 @@ body{
 }
 section{
    height: 100%;
-   /* margin: 50% 0px; */
-   /* height: auto; */
    /* border: solid 2px red; */
    display: flex;
    flex-direction: column;
@@ -87,8 +84,8 @@ i, a{
 }
 .content{
    /* border: solid 1px gold; */
+   width:90%;
    display: flex;
-   justify-content: space-around;
    justify-content: center;
    align-items: center;
    color: var(--color5);
@@ -102,29 +99,29 @@ i, a{
 }
 .card{
    width: 20%;
-   min-width: 250px;
-   max-height: 30%;
+   min-width: 270px;
    max-height: 350px;
    border: 3px solid var(--color1);
    border-radius: 20px;
-   /* height:75%; */
    margin: 30px 30px;
 }
 .card-image{
    border-radius: 18px 18px 0 0;
-   height: 260px;
-   /* height: auto; */
+   height: 275px;
+}
+.activator{
+   height: 95%;
+   object-fit:cover;
 }
 .card-title{
    color: var(--color4);
-
 }
 .project-links{
    display: flex;
+   font-size:1.35rem;
    flex-direction: column;
    color:var(--color3);
 }
-
 .project-tech ul{
    display: flex;
    flex-direction: column;
@@ -132,13 +129,10 @@ i, a{
    height:110px;
    margin-left: 20px;
 }
-
 .project-tech li{
    font-size: 1.4rem;
    color:var(--color3)
-   
 }
-
 .skills-container{
    color: var(--color1)
 }
@@ -178,8 +172,8 @@ i, a{
    height: auto;
 }
 #projects{
-   height: auto;
    background-image: linear-gradient(var(--color3), var(--color4));
+   height: auto;
 }
 #skills{
    background-image: linear-gradient(var(--color4), var(--color5));
@@ -188,14 +182,13 @@ i, a{
    height: 100px;
    color: var(--color3);
    font-size: 12px;
-   margin-bottom:350px;
-   border: 2.5px solid var(--color1);
+   background-color: var(--color5);
 }
 #profile-pic{
    border: 2.5px solid var(--color1);
    border-radius: 20px;
    width: 25%;
-   min-width: 200px;
+   min-width: 300px;
    max-width: 450px;
    margin: 20px;
 }
@@ -209,9 +202,9 @@ i, a{
    color: var(--color4);
 }
 
-/* @media screen and  (max-width: 600px){
-   section{
-      height:120%;
-      
+@media screen and  (max-width: 1300px){
+   #about .content{
+      flex-direction: column;
+      flex-wrap:none;
    }
-} */
+}
