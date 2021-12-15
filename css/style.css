@@ -12,6 +12,7 @@
 html{
    height: 100%;
    font-size:62.5%;
+   scroll-behavior: smooth;
 }
 body{
    height:100%;
@@ -48,6 +49,7 @@ body{
 }
 section{
    height: 100%;
+   /* border: solid 2px red; */
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -81,12 +83,14 @@ i, a{
    font-size:medium;
 }
 .content{
+   /* border: solid 1px gold; */
+   width:90%;
    display: flex;
    justify-content: center;
-   justify-content: space-around;
    align-items: center;
    color: var(--color5);
    flex-wrap: wrap;
+   margin: 100px 0px 200px 0px;
 }
 .contact-icons{
    color: var(--color3);
@@ -94,28 +98,33 @@ i, a{
    justify-content: center;  
 }
 .card{
-   width: 35%;
-   min-width: 300px;
+   width: 20%;
+   min-width: 270px;
+   max-height: 350px;
    border: 3px solid var(--color1);
    border-radius: 20px;
-   height:75%;
-   margin: 50px 20px;
+   margin: 30px 30px;
+}
+.card:hover {
+   transform: scale(1.02);
 }
 .card-image{
    border-radius: 18px 18px 0 0;
-   height: 260px;
-   height: auto;
+   height: 275px;
+}
+.activator{
+   height: 95%;
+   object-fit:cover;
 }
 .card-title{
    color: var(--color4);
-
 }
 .project-links{
    display: flex;
+   font-size:1.35rem;
    flex-direction: column;
    color:var(--color3);
 }
-
 .project-tech ul{
    display: flex;
    flex-direction: column;
@@ -123,13 +132,10 @@ i, a{
    height:110px;
    margin-left: 20px;
 }
-
 .project-tech li{
    font-size: 1.4rem;
    color:var(--color3)
-   
 }
-
 .skills-container{
    color: var(--color1)
 }
@@ -150,6 +156,9 @@ i, a{
    padding: 15px 15px 0 15px;
    align-items: center;
 }
+.skill-logo:hover{
+   transform: scale(1.1);
+}
 .skill-img{
    height: 75px;
    padding-bottom: 8px;
@@ -166,25 +175,26 @@ i, a{
 }
 #about{
    background-image: linear-gradient(var(--color2), var(--color3));
+   height: auto;
 }
 #projects{
-   height: auto;
    background-image: linear-gradient(var(--color3), var(--color4));
+   height: auto;
 }
 #skills{
    background-image: linear-gradient(var(--color4), var(--color5));
 }
 #footer{
    height: 100px;
-   background-color: var(--color5);
    color: var(--color3);
    font-size: 12px;
+   background-color: var(--color5);
 }
 #profile-pic{
    border: 2.5px solid var(--color1);
    border-radius: 20px;
    width: 25%;
-   min-width: 200px;
+   min-width: 300px;
    max-width: 450px;
    margin: 20px;
 }
@@ -196,4 +206,11 @@ i, a{
 #subtitle{
    font-size: 40px;
    color: var(--color4);
+}
+
+@media screen and  (max-width: 1300px){
+   #about .content{
+      flex-direction: column;
+      flex-wrap:none;
+   }
 }
