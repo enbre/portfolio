@@ -104,9 +104,11 @@ i, a{
    border: 3px solid var(--color1);
    border-radius: 20px;
    margin: 30px 30px;
+   transition: transform .25s;
 }
 .card:hover {
    transform: scale(1.02);
+   filter: drop-shadow( 2px 2px 15px rgba(255, 255, 255, .25));
 }
 .card-image{
    border-radius: 18px 18px 0 0;
@@ -155,9 +157,11 @@ i, a{
    flex-direction: column;
    padding: 15px 15px 0 15px;
    align-items: center;
+   transition: transform .25s;
 }
 .skill-logo:hover{
    transform: scale(1.1);
+   filter: drop-shadow(2px 2px 5px rgba(255 255 255 / 0.125));
 }
 .skill-img{
    height: 75px;
