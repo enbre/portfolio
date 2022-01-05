@@ -59,6 +59,30 @@ section{
 i, a{
    color: var(--color3);
 }
+.titles { 
+   text-transform: uppercase;
+   margin-top:70px;
+   width: 75%;
+   text-align: center;
+   padding: 15px;
+   font-size: 20px;
+} 
+#about > .titles {
+   color: var(--color4);
+   border-bottom: 1px solid var(--color1);
+}
+#projects > .titles {
+   color: var(--color5);
+   border-bottom: 1px solid var(--color1);
+}
+#skills > .titles {
+   color: var(--color2);
+   border-bottom: 1px solid var(--color1);
+
+   /* margin-bottom: 200px; */
+}
+
+
 .navbar{
    display: flex;
    flex-direction: column;
@@ -91,6 +115,7 @@ i, a{
    color: var(--color5);
    flex-wrap: wrap;
    margin: 100px 0px 200px 0px;
+   height: auto;
 }
 .contact-icons{
    color: var(--color3);
@@ -108,7 +133,7 @@ i, a{
 }
 .card:hover {
    transform: scale(1.02);
-   filter: drop-shadow( 2px 2px 15px rgba(255, 255, 255, .25));
+   box-shadow:2px 2px 5px rgba(255, 255, 255, .25);
 }
 .card-image{
    border-radius: 18px 18px 0 0;
@@ -187,9 +212,10 @@ i, a{
 }
 #skills{
    background-image: linear-gradient(var(--color4), var(--color5));
+   height: auto;
 }
 #footer{
-   height: 100px;
+   height: 250px;
    color: var(--color3);
    font-size: 12px;
    background-color: var(--color5);
