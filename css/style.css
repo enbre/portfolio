@@ -108,7 +108,7 @@ i, a{
 }
 .card:hover {
    transform: scale(1.02);
-   filter: drop-shadow( 2px 2px 15px rgba(255, 255, 255, .25));
+   box-shadow:2px 2px 5px rgba(255, 255, 255, .25);
 }
 .card-image{
    border-radius: 18px 18px 0 0;
