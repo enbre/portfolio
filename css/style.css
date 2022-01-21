@@ -78,8 +78,6 @@ i, a{
 #skills > .titles {
    color: var(--color2);
    border-bottom: 1px solid var(--color1);
-
-   /* margin-bottom: 200px; */
 }
 
 
