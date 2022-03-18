@@ -209,15 +209,10 @@ a {
 .skill-logo {
    display: flex;
    flex-direction: column;
-   padding: 15px 15px 0 15px;
+   padding: 15px;
+   justify-content: center;
    align-items: center;
-   transition: transform .25s;
-   border: 2px solid gold;
-}
-
-.skill-logo:hover {
-   transform: scale(1.1);
-   filter: drop-shadow(2px 2px 5px rgba(255 255 255 / 0.125));
+   margin: 1em;
 }
 
 .skill-img {
@@ -231,32 +226,26 @@ a {
 
 .tooltip {
    position: relative;
-   display: block;
-   font-size: .9em;
-   margin: 1em;
-   text-decoration: underline;
 }
 
 .tooltip .tooltip-text {
-   visibility: hidden;
    position: absolute;
-   bottom: -800%;
-   left: -250%;
-   width: 550%;
-   padding: 2em;
+   bottom: 30%;
+   left: 0;
+   left: .25em;
+   background-color: var(--color1);
+   color: var(--color4);
+   padding: .5em;
    border-radius: 1em;
-   background: #222f78;
-   color: #a6d6ff;
-   text-align: center;
-   font-weight: 200;
-   font-size: 1em;
-   -webkit-filter: opacity(0.95);
-   filter: opacity(0.95);
-   white-space: pre-line;
+   font-weight: 700;
+   font-size: 1.2em;
+   opacity: 0;
+   transition: opacity  .5s;
 }
 
 .tooltip:hover .tooltip-text {
-   visibility: visible;
+   filter: drop-shadow(2px 2px 5px rgba(255 255 255 / 0.25));
+   opacity: .9;
 }
 
 #projects-content {
