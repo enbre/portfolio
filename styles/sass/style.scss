@@ -1,0 +1,307 @@
+@import './variables';
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+html {
+   height: 100%;
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body {
+   height: 100%;
+   font-size: 1.6rem;
+   color: $color3;
+}
+
+.navbar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-end;
+   position: fixed;
+   width: 100%;
+   height: 40px;
+   background-color: $mdgrey;
+   z-index: 2;
+   ul {
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      // border: 2px solid red;
+   }
+
+   li {
+      float: left;
+
+      a {
+         text-decoration: none;
+         display: block;
+         color: $color3;
+         padding: 8px;
+         text-align: center;
+
+         &:hover {
+            background-color: $mdgrey;
+         }
+      }
+
+   }
+
+}
+
+
+.dropdown-content li {
+   background: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#dropdown1 {
+   background-color: $dkgrey;
+}
+
+section {
+   height: 100%;
+   /* border: solid 2px red; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+}
+
+i,
+a {
+   color: $color3;
+}
+
+.titles {
+   text-transform: uppercase;
+   margin-top: 70px;
+   width: 75%;
+   text-align: center;
+   padding: 15px;
+   font-size: 20px;
+}
+
+#about>.titles {
+   color: $color4;
+   border-bottom: 1px solid $color1;
+}
+
+#projects>.titles {
+   color: $color5;
+   border-bottom: 1px solid $color1;
+}
+
+#skills>.titles {
+   color: $color2;
+   border-bottom: 1px solid $color1;
+}
+
+.container {
+   /* border: 2px solid green; */
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.text-body {
+   width: 60%;
+   font-size: medium;
+}
+
+.content {
+   /* border: solid 1px gold; */
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: $color5;
+   flex-wrap: wrap;
+   margin: 100px 0px 200px 0px;
+   height: auto;
+}
+
+.contact-icons {
+   color: $color3;
+   display: flex;
+   justify-content: center;
+}
+
+.card {
+   width: 20%;
+   min-width: 270px;
+   max-height: 350px;
+   border: 3px solid $color1;
+   border-radius: 20px;
+   margin: 30px 30px;
+   transition: transform .25s;
+
+   &:hover {
+      transform: scale(1.02);
+      box-shadow: 2px 2px 5px $ltgrey;
+   }
+
+   &-image {
+      border-radius: 18px 18px 0 0;
+      height: 275px;
+   }
+
+   &-title {
+      color: $color4;
+   }
+}
+
+
+.activator {
+   height: 95%;
+   object-fit: cover;
+}
+
+.project-links {
+   display: flex;
+   font-size: 1.35rem;
+   flex-direction: column;
+   color: $color3;
+}
+
+.project-tech {
+   ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 110px;
+      margin-left: 20px;
+   }
+   li {
+      font-size: 1.4rem;
+      color: $color3
+   }
+}
+
+
+.skills-container {
+   color: $color1
+}
+
+.icon {
+   display: block;
+   padding: 10px 0;
+   text-align: center;
+   color: $color3;
+   &:hover {
+      transition: all .2s ease-in-out;
+      transform: scale(1.05);
+      filter: brightness(130%);
+   }
+}
+
+
+.skill-logo {
+   display: flex;
+   padding: 2.5em;
+   justify-content: center;
+   align-items: center;
+   margin: -.8em;   
+}
+
+.skill-img {
+   height: 75px;
+   padding-bottom: 8px;
+}
+
+.shrink-img {
+   padding-top: 15px;
+}
+
+.tooltip {
+   position: relative;
+   
+}
+
+.tooltip .tooltip-text {
+   position: absolute;
+   text-align: center;
+   bottom: 30%;
+   left: 1em;
+   right: 1em;
+   background-color: $color1;
+   color: $color4;
+   padding: .5em;
+   border-radius: 1em;
+   font-weight: 700;
+   font-size: 1em;
+   opacity: 0;  
+   transition: opacity .5s;
+}
+
+.tooltip:hover .tooltip-text {
+   filter: drop-shadow(2px 2px 5px $ltgrey);
+   opacity: .9;
+}
+
+#projects-content {
+   border: 2px solid $color1;
+   color: $color4;
+}
+
+#home {
+   background-image: linear-gradient($color1, $color2);
+}
+
+#about {
+   background-image: linear-gradient($color2, $color3);
+   height: auto;
+}
+
+#projects {
+   background-image: linear-gradient($color3, $color4);
+   height: auto;
+}
+
+#skills {
+   background-image: linear-gradient($color4, $color5);
+   height: auto;
+}
+
+#footer {
+   height: 250px;
+   color: $color3;
+   font-size: 12px;
+   background-color: $color5;
+}
+
+#profile-pic {
+   border: 2.5px solid $color1;
+   border-radius: 20px;
+   width: 25%;
+   min-width: 300px;
+   max-width: 450px;
+   margin: 20px;
+}
+
+#title {
+   font-size: 60px;
+   font-weight: bold;
+   color: $color5;
+}
+
+#subtitle {
+   font-size: 40px;
+   color: $color4;
+}
+
+@media screen and (max-width: 1300px) {
+   #about .content {
+      flex-direction: column;
+      flex-wrap: none;
+   }
+}
