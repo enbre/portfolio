@@ -207,11 +207,10 @@ a {
 
 .skill-logo {
    display: flex;
-   flex-direction: column;
-   padding: 15px;
+   padding: 2.5em;
    justify-content: center;
    align-items: center;
-   margin: 1em;
+   margin: -.8em;   
 }
 
 .skill-img {
@@ -225,21 +224,22 @@ a {
 
 .tooltip {
    position: relative;
-
+   
 }
 
 .tooltip .tooltip-text {
    position: absolute;
+   text-align: center;
    bottom: 30%;
-   left: 0;
-   left: .25em;
+   left: 1em;
+   right: 1em;
    background-color: $color1;
    color: $color4;
    padding: .5em;
    border-radius: 1em;
    font-weight: 700;
-   font-size: 1.2em;
-   opacity: 0;
+   font-size: 1em;
+   opacity: 0;  
    transition: opacity .5s;
 }
 

@@ -264,18 +264,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 15px;
+  padding: 2.5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em;
+  margin: -.8em;
 }
 
 .skill-img {
@@ -293,15 +289,16 @@ a {
 
 .tooltip .tooltip-text {
   position: absolute;
+  text-align: center;
   bottom: 30%;
-  left: 0;
-  left: .25em;
+  left: 1em;
+  right: 1em;
   background-color: #ADD9C9;
   color: #023373;
   padding: .5em;
   border-radius: 1em;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1em;
   opacity: 0;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
