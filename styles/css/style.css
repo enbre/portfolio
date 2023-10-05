@@ -14,6 +14,7 @@ body {
   height: 100%;
   font-size: 1.6rem;
   color: #2B7B8C;
+  background-color: #ADD9C9;
 }
 
 .navbar {
@@ -30,15 +31,16 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 2;
+  z-index: 4;
 }
 
 .navbar ul {
-  position: fixed;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -78,8 +80,7 @@ body {
 }
 
 section {
-  height: 100%;
-  /* border: solid 2px red; */
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,23 +324,19 @@ a {
 #about {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#37A69B), to(#2B7B8C));
   background-image: linear-gradient(#37A69B, #2B7B8C);
-  height: auto;
 }
 
 #projects {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2B7B8C), to(#023373));
   background-image: linear-gradient(#2B7B8C, #023373);
-  height: auto;
 }
 
 #skills {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#023373), to(#020659));
   background-image: linear-gradient(#023373, #020659);
-  height: auto;
 }
 
 #footer {
-  height: 250px;
   color: #2B7B8C;
   font-size: 12px;
   background-color: #020659;

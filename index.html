@@ -17,8 +17,26 @@
 </head>
 
 <body>
-
    <div class="navbar">
+      <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#projects">Projects</a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact</a></li>
+      </ul>
+   </div>
+
+
+   <main>
+
+
+   <section id="home">
+      <p class="text-body" id="title">Noah Brezel</p>
+      <p class="text-body" id="subtitle">Quality Assurance Engineer</p>
+      <!-- </section> -->
+
+      <!-- <div class="navbar">
       <ul>
          <li><a href="#home">Home</a></li>
          <li><a href="#about">About</a></li>
@@ -68,12 +86,13 @@
             <span>Resume</span>
          </div>
       </li>
-   </ul>
-
-   <section id="home">
-      <p class="text-body" id="title">Noah Brezel</p>
-      <p class="text-body" id="subtitle">Frontend Developer</p>
+   </ul> -->
    </section>
+   <!-- <div class="navbar">
+      <span>hey!!!!</span>
+   </div> -->
+
+
 
    <section id="about">
       <p class="titles">About me</p>
@@ -96,7 +115,7 @@
 
       </div>
    </section>
-
+<hr>
    <section id="projects">
       <p class="titles">Projects</p>
       <div class="content">
@@ -105,8 +124,7 @@
                <img class="activator" src="./assets/images/screenshot_simon.png">
             </div>
             <div class="card-content">
-               <span class="card-title activator ">SIMON<i
-                     class="material-icons right activator">more_vert</i></span>
+               <span class="card-title activator ">SIMON<i class="material-icons right activator">more_vert</i></span>
                <div class="card-action project-links">
                   <p><a href="https://noahbrezel.com/simon" target="_blank">
                         <i class="fas fa-desktop fa-lg"></i>&emsp;Live site</a></p>
@@ -119,7 +137,9 @@
                <br>
                <hr>
                <br>
-               <p> Based on the classic handheld game of the same name, SIMON is a simple, one-person puzzle. Each round, the computer adds one lit section to its pattern, and you try to repeat the pattern in order. One mistake and the game is over!!
+               <p> Based on the classic handheld game of the same name, SIMON is a simple, one-person puzzle. Each
+                  round, the computer adds one lit section to its pattern, and you try to repeat the pattern in order.
+                  One mistake and the game is over!!
                </p>
                <br>
                <p>Technology used:</p>
@@ -337,104 +357,112 @@
       <p class="titles">Skills</p>
       <div class="content">
 
-      
-      <div class="container skills-container">
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/html_logo.png" alt="HTML logo"aria-hidden="true" />
-            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-               <span class="tooltip-text">HTML</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/css_logo.png" alt="CSS logo"aria-hidden="true" />
-            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-               <span class="tooltip-text">CSS</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/sass_logo.png" alt="SASS logo"aria-hidden="true" />
-            <a href="https://sass-lang.com/" target="_blank">
-               <span class="tooltip-text">SASS</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/javascript_logo.png" alt="JavaScript logo"aria-hidden="true" />
-            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
-               <span class="tooltip-text">JavaScript</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/node_js_logo.png" alt="Node JS logo"aria-hidden="true" />
-            <a href="https://nodejs.org/en/" target="_blank">
-               <span class="tooltip-text">NodeJS</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/react_logo.png" alt="React logo"aria-hidden="true" />
-            <a href="https://reactjs.org/" target="_blank">
-               <span class="tooltip-text">React</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/python_logo.png" alt="Python logo"aria-hidden="true" />
-            <a href="https://www.python.org/" target="_blank">
-               <span class="tooltip-text">Python</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img shrink-img" src="./assets/images/express_js_logo.png" alt="Express JS logo"aria-hidden="true" />
-            <a href="https://expressjs.com/" target="_blank">
-               <span class="tooltip-text">ExpressJS</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/postgresql_logo.png" alt="PostgreSQL logo"aria-hidden="true" />
-            <a href="https://www.postgresql.org/" target="_blank">
-               <span class="tooltip-text">PostgreSQL</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img shrink-img" src="./assets/images/materialize_logo.png" alt="Materialize logo"width="95" aria-hidden="true" />
-            <a href="https://materialize.com/" target="_blank">
-               <span class="tooltip-text">Materialize</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <img class="skill-img shrink-img" src="./assets/images/bootstrap_logo.png" alt="Bootstrap logo" aria-hidden="true" />
-            <a href="https://getbootstrap.com/" target="_blank">
-               <span class="tooltip-text">Bootstrap</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-            <a href="https://www.solidworks.com/" target="_blank">
-               <img class="skill-img" src="./assets/images/solidworks_logo.png" alt="SolidWorks logo"aria-hidden="true" />
-            </a>
-            <span class="tooltip-text">SolidWorks</span>
-         </div>
-         <div class="skill-logo tooltip ">
-            <a href="https://www.vectorworks.net/en-US" target="_blank">
-               <img class="skill-img" src="./assets/images/vectorworks_logo.png" alt="Vectorworks logo"aria-hidden="true" />
-            </a>
-            <span class="tooltip-text">Vectorworks</span>
-         </div>
 
-         <div class="skill-logo tooltip">
-            <img class="skill-img" src="./assets/images/sketchup_logo.png" alt="Sketchup logo"aria-hidden="true" />
-            <a href="https://www.sketchup.com/" target="_blank">
-               <span class="tooltip-text">Sketchup</span>
-            </a>
-         </div>
-         <div class="skill-logo tooltip">
-               <img class="skill-img" src="./assets/images/illustrator_logo.png" alt="Adobe Illustrator logo"aria-hidden="true" />
-            <a href="https://www.adobe.com/products/illustrator.html" target="_blank">
+         <div class="container skills-container">
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/html_logo.png" alt="HTML logo" aria-hidden="true" />
+               <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
+                  <span class="tooltip-text">HTML</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/css_logo.png" alt="CSS logo" aria-hidden="true" />
+               <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                  <span class="tooltip-text">CSS</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/sass_logo.png" alt="SASS logo" aria-hidden="true" />
+               <a href="https://sass-lang.com/" target="_blank">
+                  <span class="tooltip-text">SASS</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/javascript_logo.png" alt="JavaScript logo"
+                  aria-hidden="true" />
+               <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                  <span class="tooltip-text">JavaScript</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/node_js_logo.png" alt="Node JS logo" aria-hidden="true" />
+               <a href="https://nodejs.org/en/" target="_blank">
+                  <span class="tooltip-text">NodeJS</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/react_logo.png" alt="React logo" aria-hidden="true" />
+               <a href="https://reactjs.org/" target="_blank">
+                  <span class="tooltip-text">React</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/python_logo.png" alt="Python logo" aria-hidden="true" />
+               <a href="https://www.python.org/" target="_blank">
+                  <span class="tooltip-text">Python</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img shrink-img" src="./assets/images/express_js_logo.png" alt="Express JS logo"
+                  aria-hidden="true" />
+               <a href="https://expressjs.com/" target="_blank">
+                  <span class="tooltip-text">ExpressJS</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/postgresql_logo.png" alt="PostgreSQL logo"
+                  aria-hidden="true" />
+               <a href="https://www.postgresql.org/" target="_blank">
+                  <span class="tooltip-text">PostgreSQL</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img shrink-img" src="./assets/images/materialize_logo.png" alt="Materialize logo"
+                  width="95" aria-hidden="true" />
+               <a href="https://materialize.com/" target="_blank">
+                  <span class="tooltip-text">Materialize</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img shrink-img" src="./assets/images/bootstrap_logo.png" alt="Bootstrap logo"
+                  aria-hidden="true" />
+               <a href="https://getbootstrap.com/" target="_blank">
+                  <span class="tooltip-text">Bootstrap</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <a href="https://www.solidworks.com/" target="_blank">
+                  <img class="skill-img" src="./assets/images/solidworks_logo.png" alt="SolidWorks logo"
+                     aria-hidden="true" />
+               </a>
+               <span class="tooltip-text">SolidWorks</span>
+            </div>
+            <div class="skill-logo tooltip ">
+               <a href="https://www.vectorworks.net/en-US" target="_blank">
+                  <img class="skill-img" src="./assets/images/vectorworks_logo.png" alt="Vectorworks logo"
+                     aria-hidden="true" />
+               </a>
+               <span class="tooltip-text">Vectorworks</span>
+            </div>
 
-               <span class="tooltip-text">Illustrator</span>
-            </a>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/sketchup_logo.png" alt="Sketchup logo" aria-hidden="true" />
+               <a href="https://www.sketchup.com/" target="_blank">
+                  <span class="tooltip-text">Sketchup</span>
+               </a>
+            </div>
+            <div class="skill-logo tooltip">
+               <img class="skill-img" src="./assets/images/illustrator_logo.png" alt="Adobe Illustrator logo"
+                  aria-hidden="true" />
+               <a href="https://www.adobe.com/products/illustrator.html" target="_blank">
+
+                  <span class="tooltip-text">Illustrator</span>
+               </a>
+            </div>
          </div>
-      </div>
       </div>
    </section>
-
+</main>
    <footer id="footer">
       <section>
          <p>Noah Brezel © 2022 All rights reserved.</p>
