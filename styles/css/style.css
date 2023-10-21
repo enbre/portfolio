@@ -237,6 +237,7 @@ a {
 
 #home {
   background-image: linear-gradient(#ADD9C9, #37A69B);
+  height: 100vh;
 }
 
 #about {
